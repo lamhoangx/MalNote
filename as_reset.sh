@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm ~/Library/Application\ Support/AndroidStudio*
-rm ~/Library/Caches/AndroidStudio*
-rm ~/Library/Logs/AndroidStudio*
-rm ~/Library/Preferences/AndroidStudio*
+rm -rf ~/Library/Application\ Support/AndroidStudio*
+rm -rf ~/Library/Caches/AndroidStudio*
+rm -rf ~/Library/Logs/AndroidStudio*
+rm -rf ~/Library/Preferences/AndroidStudio*
