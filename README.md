@@ -6,4 +6,10 @@ You need remove all the directories that are related to AndroidStudio:
 ~/Library/Logs/AndroidStudio*  
 ~/Library/Preferences/AndroidStudio*  
 
+
+
+## Reset git to initial
+```
+git update-ref -d HEAD
+```
 Hope doing well...
