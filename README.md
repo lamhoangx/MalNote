@@ -12,4 +12,11 @@ You need remove all the directories that are related to AndroidStudio:
 ```
 git update-ref -d HEAD
 ```
+
+## Install Bundle build (.abb)
+```
+brew install bundletool
+bundletool build-apks --bundle=app-release.aab --output=app-release.apks
+bundletool install-apks --apks=app-release.apks
+```
 Hope doing well...
