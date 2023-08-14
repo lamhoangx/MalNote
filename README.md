@@ -9,31 +9,36 @@ You need remove all the directories that are related to AndroidStudio:
 # Java Env
 ```
 # Install via `brew`
-  $ brew install openjdk
+$ brew install openjdk
 # Or
-  $ brew upgrade openjdk
+$ brew upgrade openjdk
 ```
 For the system Java wrappers to find this JDK, symlink it with
 ```
-  sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 ```
 If you need to have openjdk first in your PATH, run:
 ```
-  echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"' >> ~/.zshrc
 ```
 Check version and replace the version into source file (.zshrc) at `JAVA_HOME`
 ```
-  /usr/libexec/java_home -V
+/usr/libexec/java_home -V
+```
+
+Remove, switch to another version and remove by
+```
+sudo rm -rf /Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk
 ```
 
 .zshrc
 ```
-  export ANDROID_HOME=/Users/lamhoangx/Library/Android/sdk
-  export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-  export PATH=$PATH:/opt/homebrew/bin
-  
-  export JAVA_HOME=`/usr/libexec/java_home -v 20.0.1`
-  export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export ANDROID_HOME=/Users/lamhoangx/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH=$PATH:/opt/homebrew/bin
+
+export JAVA_HOME=`/usr/libexec/java_home -v 20.0.1`
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 ```
 
 ## Reset git to initial
